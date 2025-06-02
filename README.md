@@ -1,101 +1,32 @@
-# 🤖 PDF Question Answering App
+# AskMyPDF 🤖 – Intelligent PDF Q&A System
 
-A ChatGPT-powered PDF question answering system using LangChain, Streamlit, and OpenAI GPT-4-turbo.
+> Created by **Zhongh Lee** · Deployed with **Streamlit**  
+> Ask questions directly from your PDF documents – powered by LangChain and OpenAI GPT-4 Turbo.
 
-## 💡 Features
+---
 
-- 📄 Upload any PDF file and extract full content
-- ❓ Ask questions about the uploaded PDF
-- 🧠 Uses GPT-4-turbo for accurate answers
-- 🧷 Embeds PDF content using Chroma vector store
-- 🔎 Supports long-document semantic search with LangChain
-- 🖥️ Web interface via Streamlit
+## 🌟 What is AskMyPDF?
 
-## 🚀 How to Run Locally
+AskMyPDF 🤖 is an intelligent, user-friendly web app that lets you upload any PDF file and ask questions about it. The system automatically understands your content and provides instant, accurate answers – all within a clean, modern UI.
 
-1. **Clone the repository**:
+> Built for businesses, researchers, and professionals who need fast insights from documents.
 
-```bash
-git clone https://github.com/your-username/pdf-qa-demo.git
-cd pdf-qa-demo
-```
+---
 
-2. **Install dependencies**:
+## 💡 Key Features
 
-```bash
-pip install -r requirements.txt
-```
+- 📄 Upload and query PDF documents
+- 💬 Ask questions in natural language
+- 🌍 Supports multiple languages
+- ⚡ Uses GPT-4 Turbo for fast, accurate answers
+- ☁️ Cloud-ready and open source
 
-3. **Add your OpenAI API key**:
+---
 
-Create a `.env` file in the project root:
+## 🚀 How to Run (Local)
 
-```
-OPENAI_API_KEY=your-api-key-here
-```
-
-4. **Start the Streamlit app**:
+1. **Clone the repo**
 
 ```bash
-streamlit run main.py
-```
-
-Then open in browser: `http://localhost:8501`
-
-## 📁 Project Structure
-
-```
-pdf_qa_demo/
-│
-├── main.py              # Streamlit web interface
-├── qa_chain.py          # LangChain QA pipeline logic
-├── pdf_tool.py          # PDF text extraction module
-├── .streamlit/config.toml  # Streamlit config
-├── requirements.txt     # Python dependencies
-├── .env                 # OpenAI API key (not uploaded)
-└── README.md            # Project instructions
-```
-
-## 🔐 Environment Variables
-
-This app requires the following key in `.env`:
-
-```
-OPENAI_API_KEY=your_openai_key
-```
-
-## 📦 Dependencies
-
-Key dependencies include:
-
-- `langchain`
-- `langchain-openai`
-- `chromadb`
-- `streamlit`
-- `python-dotenv`
-- `PyMuPDF` (for PDF reading)
-
-Install them with:
-
-```bash
-pip install -r requirements.txt
-```
-
-## 🧪 Example
-
-Upload a file like:
-
-```
-The_Little_Prince.pdf
-```
-
-Ask:
-```
-what is the story?
-```
-
-🧠 The app will search the document and respond using GPT-4-turbo.
-
-## 📄 License
-
-MIT License
+git clone https://github.com/yourusername/askmypdf.git
+cd askmypdf
